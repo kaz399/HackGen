@@ -1,0 +1,20 @@
+{
+    "name": "HackGen",
+    "build": {
+        // Dockerfile is in the same directory as devcontainer.json
+        "dockerfile": "Dockerfile",
+        // Context is the repo root so the workspace mount resolves correctly
+        "context": ".."
+    },
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Shell script linting
+                "timonwong.shellcheck"
+            ]
+        }
+    }
+}
