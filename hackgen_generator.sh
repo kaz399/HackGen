@@ -36,7 +36,7 @@ typo_line_gap=80
 hack_width=616
 genjyuu_width=1024
 
-hackgen_half_width=540
+hackgen_half_width=618
 hackgen_full_width=$((${hackgen_half_width} * 2))
 hack_shrink_x=88
 hack_shrink_y=97
